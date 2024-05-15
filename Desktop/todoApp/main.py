@@ -68,13 +68,12 @@ if __name__ == "__main__":
 
         if choice == "1":
             addTask()
+            saveTasks(user_file)
         elif choice == "2":
             deleteTask()
         elif choice == "3":
             listTasks() 
         elif choice == "4":
-            # Save tasks to file before quitting
-            saveTasks(user_file)
             print("Tasks saved. Goodbye! 👋👋")
             break
         else:
